@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/Fastapi.py",
+      "src": "API/Fastapi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/Fastapi.py"
+      "dest": "API/Fastapi.py"
     }
   ]
 }
