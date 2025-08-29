@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/Fastapi.py"
+      "dest": "API/Fastapi.py"
     }
   ]
 }
