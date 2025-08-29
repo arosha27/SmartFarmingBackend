@@ -17,12 +17,21 @@ import os
 
 
 ############# Load the saved model and scaler ################
-with open("API/models/xgboost_classifier.pickle", "rb") as f:
+# with open("API/models/xgboost_classifier.pickle", "rb") as f:
+#     model = pickle.load(f)
+
+# with open("API/models/scaler.pickle", "rb") as f:
+#     scaler = pickle.load(f)
+
+
+import os
+# ...
+with open(os.path.join(os.path.dirname(__file__), "models", "xgboost_classifier.pickle"), "rb") as f:
     model = pickle.load(f)
 
-with open("API/models/scaler.pickle", "rb") as f:
+with open(os.path.join(os.path.dirname(__file__), "models", "scaler.pickle"), "rb") as f:
     scaler = pickle.load(f)
-
+    
 ############### Create the FastAPI object ##############
 app = FastAPI(
     title="Smart Farming Disease Risk API",
