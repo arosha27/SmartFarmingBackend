@@ -1,11 +1,23 @@
-# Core ML Libraries
-numpy==2.3.2
-pandas==2.3.1
+# # Core ML Libraries
+# numpy==2.2.6
+# pandas==2.3.1
+
+# # API (Backend)
+# fastapi==0.116.1
+# uvicorn[standard]==0.35.0
+# pydantic==1.10.9
+# shap==0.48.0
 
 
-# API (Backend)
+
+# Core
 fastapi==0.116.1
-uvicorn[standard]==0.35.0
-pydantic==1.10.9
-shap
+uvicorn[standard]==0.21.0
 
+# Data & ML (only what you actually need)
+numpy==2.2.6
+pandas==2.3.1
+scikit-learn==1.2.2
+xgboost==1.7.6
+# shap is optional (heavy) — only include if you must have /explain endpoint on Vercel.
+# shap==0.48.0

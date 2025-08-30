@@ -9,7 +9,13 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/Fastapi.py"
+      "dest": "API/Fastapi.py"
     }
-  ]
+  ],
+  "functions": {
+    "API/Fastapi.py": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 }
